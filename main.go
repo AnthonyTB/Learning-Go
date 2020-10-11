@@ -2,6 +2,6 @@ package main
 
 import "fmt"
 
-func main() {
+func mainPre() {
 	fmt.Println("Hello Front End Masters!")
 }
