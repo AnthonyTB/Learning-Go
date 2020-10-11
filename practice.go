@@ -1,8 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func mainPrac() {
+func main() {
 	// creates new line
 	fmt.Println("Hello World")
 	// no new line
