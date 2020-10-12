@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func mainolddd() {
 	// creates new line
 	fmt.Println("Hello World")
 	// no new line

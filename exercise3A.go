@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func mainold() {
 	sentence := "This is a sentence"
 
 	for index, strVal := range sentence {
