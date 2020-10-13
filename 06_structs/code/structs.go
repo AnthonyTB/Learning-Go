@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // User is a user type
 type User struct {
@@ -36,6 +38,10 @@ func describeGroup(g Group) string {
 	return desc
 }
 
+func updateUserEmail(user *User) {
+	user.Email = "anthonytb97@gmail.com"
+}
+
 func main() {
 
 	u := User{ID: 1, FirstName: "Marilyn", LastName: "Monroe", Email: "marilyn.monroe@gmail.com"}
@@ -44,6 +50,8 @@ func main() {
 
 	g := Group{role: "admin", users: []User{u, u2, u3}, newestUser: u2, spaceAvailable: true}
 
+	fmt.Println(u.Email)
+	updateUserEmail(&u)
 	fmt.Println(describeUser(u))
 	fmt.Println(describeGroup(g))
 }
